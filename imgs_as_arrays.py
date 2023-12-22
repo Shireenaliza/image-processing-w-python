@@ -15,5 +15,5 @@ plt.savefig('/home/user/projects/image-processing-w-python/DATA/displayed_image.
 # Show the saved image using an external viewer 
 subprocess.run(['xdg-open', '/home/user/projects/image-processing-w-python/DATA/displayed_image.png'])
 
-print(type(pic))
 
+print(type(pic_arr))
