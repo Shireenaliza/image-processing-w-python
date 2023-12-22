@@ -6,7 +6,6 @@ from PIL import Image
 
 pic = Image.open('/home/user/projects/image-processing-w-python/DATA/00-puppy.jpg')
 
-
 plt.imshow(pic)
 
 # Save the figure as an image file
@@ -15,5 +14,9 @@ plt.savefig('/home/user/projects/image-processing-w-python/DATA/displayed_image.
 # Show the saved image using an external viewer 
 subprocess.run(['xdg-open', '/home/user/projects/image-processing-w-python/DATA/displayed_image.png'])
 
+print(type(pic))
 
+pic_arr = np.asarray(pic)
 print(type(pic_arr))
+
+
