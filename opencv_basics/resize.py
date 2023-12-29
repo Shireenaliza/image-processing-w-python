@@ -27,3 +27,12 @@ plt.savefig('/home/user/Documents/projects/image-processing-w-python/Images/catt
 subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/catto_edit6.jpeg'])
 
 print(new_img2.shape)
+
+#adjust the canvas space 
+fig = plt.figure(figsize=(10,8)) #designate a large blank canvs area using figsize
+ax = fig.add_subplot(111) #axis
+ax.imshow(fix_img)
+plt.savefig('/home/user/Documents/projects/image-processing-w-python/Images/catto_edit8.jpeg')
+subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/catto_edit8.jpeg'])
+
+#cv2 has its own imshow function to use it without the the witritn 
