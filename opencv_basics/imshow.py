@@ -7,7 +7,6 @@ fix_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 cv2.imshow('kitty', fix_img)
 cv2.waitKey()
 
-cv2.destroyAllWindows()
 #wait key -- have i waited atleast this many ms?
 
 #or
