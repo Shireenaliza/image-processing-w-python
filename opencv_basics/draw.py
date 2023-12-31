@@ -23,3 +23,4 @@ print(cv2.rectangle(blank_img,pt1=(200,200),pt2=(300,300),color=(0,0,255),thickn
 plt.imshow(rec_img)
 plt.savefig('/home/user/Documents/projects/image-processing-w-python/Images/rec_img.jpeg')
 subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/rec_img.jpeg'])
+
