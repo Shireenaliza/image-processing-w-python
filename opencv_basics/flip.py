@@ -23,4 +23,4 @@ new_img3 = cv2.flip(fix_img,-1)   #vboth axis
 plt.imshow(new_img3)
 cv2.imwrite('/home/user/Documents/projects/image-processing-w-python/Images/catto_edit8.jpeg', new_img3)
 subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/catto_edit8.jpeg'])
-z
+

@@ -4,8 +4,10 @@ img = cv2.imread('/home/user/Documents/projects/image-processing-w-python/Images
 fix_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 #imshow( windowname , img)
+''' 
 cv2.imshow('kitty', fix_img)
 cv2.waitKey()
+'''
 
 #wait key -- have i waited atleast this many ms?
 
