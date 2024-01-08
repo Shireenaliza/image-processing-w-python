@@ -5,7 +5,7 @@ fix_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 #imshow( windowname , img)
 ''' 
-cv2.imshow('kitty', fix_img)
+cv2.imshow('kitty',img)
 cv2.waitKey()
 '''
 
@@ -14,7 +14,7 @@ cv2.waitKey()
 #or
 
 while True:
-    cv2.imshow('katto', fix_img)
+    cv2.imshow('katto', img)
     
     #if we waited atleast 1 ms AND  we pressed Esc Key
     if cv2.waitKey(1) & 0xFF == 27:
@@ -23,5 +23,5 @@ while True:
 cv2.destroyAllWindows()
 
 
-    
+
     

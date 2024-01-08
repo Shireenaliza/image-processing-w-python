@@ -21,9 +21,15 @@ print(vertices.shape) #images need to be in 3 dimentions
 pts = vertices.reshape((-1,1,2))  
 print(pts.shape)
 
-poly_img = cv2.polylines(blank_img,[pts],isClosed=True, color=(255,0,0),thickness=5)
+poly_img = cv2.polylines(blank_img,[pts],isClosed=True, color=(255,0,0),thickness=2)
 
 plt.imshow(poly_img)
 plt.savefig('/home/user/Documents/projects/image-processing-w-python/Images/poly_img.jpeg')
 subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/poly_img.jpeg'])
 
+#fill poly
+polyfilled_img = cv2.fillPoly(blank_img,[pts],color=(255,0,0))
+
+plt.imshow(poly_img)
+plt.savefig('/home/user/Documents/projects/image-processing-w-python/Images/task2.jpeg')
+subprocess.run(['xdg-open', '/home/user/Documents/projects/image-processing-w-python/Images/task2.jpeg'])
